@@ -49,6 +49,8 @@ const config: Config = {
       routeBasePath: 'data-science',
       path: './data-science',
       showReadingTime: true,
+      blogSidebarCount: 20,
+      blogSidebarTitle: 'Posts',
     }],
     ['@docusaurus/plugin-content-blog',
     {
