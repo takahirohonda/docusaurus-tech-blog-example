@@ -20,7 +20,7 @@ Deep learning on Iris certainly feels like cracking a nut with a sledge hammer. 
 
 There are many ways to get a csv version of Iris. I got it from R.
 
-```bash
+```r
 path = '/tmp/iris.csv'
 data(iris)
 write.csv(iris, path,row.names=FALSE)
