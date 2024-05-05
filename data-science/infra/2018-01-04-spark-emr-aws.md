@@ -40,6 +40,8 @@ Move the output of the Spark application to S3 and execute copy command to Redsh
 BI tools to fetch the output from Redshift for presentation.
 Sqoop is a command line tool to transfer data between Hadoop and relational databases. EMR uses Hadoop for file management. So, it is the best tool to move the data from relational databases through Hadoop in EMR to S3. It is fast and easy to learn. I learned everything about Sqoop from a cookbook which you can download for free here.
 
+Below image not working with docusaurus compilation 😢
+
 <!-- ![data-pipeline]('./img/data-pipeline.png) -->
 
 Use Case 2
