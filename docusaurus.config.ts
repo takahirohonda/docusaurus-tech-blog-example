@@ -65,13 +65,15 @@ const config: Config = {
       routeBasePath: 'others',
       path: './others',
       showReadingTime: true,
-    }]
+    }],
   ],
   presets: [
     [
       'classic',
       {
-        docs: false,
+        docs: {
+          sidebarPath: "./sidebars.ts",
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -92,6 +94,12 @@ const config: Config = {
         {to: '/data-science', label: 'Data Science', position: 'left'},
         {to: '/infrastructure', label: 'Infrastructure', position: 'left'},
         {to: '/others', label: 'others', position: 'left'},
+        {
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Docs",
+        },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
