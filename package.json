@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "run-c++": "/usr/bin/clang++ -std=gnu++14 -fcolor-diagnostics -fansi-escape-codes -g /Users/taka/code/mdh/docusaurus-tech-blog-example/helloWorld.cpp -o /Users/taka/code/mdh/docusaurus-tech-blog-example/compiled/helloWorld && ./compiled/helloWorld",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
