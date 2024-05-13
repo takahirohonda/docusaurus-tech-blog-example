@@ -4,7 +4,7 @@ title: How To Save Machine Learning Models In R
 tags: [Data Science, Machine Learning, Save Models, R]
 ---
 
-Once you finish training the model and are happy with it, you may need to consider saving the model. Otherwise, you will loose the model once you close the session. The model you create in R session is not persistent, only existing in the memory temporarily. Most of the time, training is a time-consuming process. Without saving the model, you have to run the training algorithm again and again. This is especially not good to happen in production.
+Once you finish training the model and are happy with it, you may need to consider saving the model. <!--truncate-->Otherwise, you will loose the model once you close the session. The model you create in R session is not persistent, only existing in the memory temporarily. Most of the time, training is a time-consuming process. Without saving the model, you have to run the training algorithm again and again. This is especially not good to happen in production.
 
 In production, it is ideal to have a trained model saved and your code are only loading and using it to predict the outcome on the new dataset.
 

@@ -4,7 +4,7 @@ title: How To Create a Word Cloud For Your Favourite Book With R
 tags: [Data Science, R, Text Analytics, Word Cloud, Visualisation]
 ---
 
-Making a word cloud is fun and easy. It is a way of looking at text data and gain a different perspective. <!--Truncate -->For example, if you have a bunch of customer feedback about your product, you can quickly create a word cloud to get some ideas. When I work with text data, it is often the first step I do to quickly show business users something or to simply get the feeling before I get into more advanced analysis such as sentiment analysis or machine learning.
+Making a word cloud is fun and easy. It is a way of looking at text data and gain a different perspective. <!--truncate -->For example, if you have a bunch of customer feedback about your product, you can quickly create a word cloud to get some ideas. When I work with text data, it is often the first step I do to quickly show business users something or to simply get the feeling before I get into more advanced analysis such as sentiment analysis or machine learning.
 
 Creating a word cloud for your favourite book is even more fun if you are a book lover. It is another way to get to know your book and gives you a new creative perspective. In this post, I am building a word cloud from On The Road by Jack Kerouac. This is one of my favourite books. It is beautiful, ragged and free.
 

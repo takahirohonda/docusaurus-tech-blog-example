@@ -1,6 +1,6 @@
 ---
-slug: data-science/visualisation/how-to-customise-shinyapp-with-bootstrap-css-javascript-and-plotly
-title: How To Customise ShinyApp With Bootstrap, Javascript And Plotly
+slug: data-science/machine-learning/predict-internet-popularity-by-optimising-neural-networks-with-r
+title: Predict Internet Popularity By Optimising Neural Networks With R
 tags:
   [
     Data Science,
@@ -35,9 +35,9 @@ Neural networks has many different flavours. I chose the nnet package because it
 
 The bigger neuron size you use, the more complicated the model become. Therefore, more neurons tend to become over-fitting. Of course, this is dependent on the dataset. It is only determined by experimentation. However, smaller size is a good rule of thumb.
 
-Neural networks sound complicated and magical. But, if you deconstruct them, they are basically nonlinear statistical model. Hence, we should try to optimise the regularisation parameter. nnet has a parameter called decay for regularisation. In short, regularisation prevent over-fitting by penalising over-fitted training models.
+Neural networks sound complicated and magical. But, if you deconstruct them, they are basically non-linear statistical model. Hence, we should try to optimise the regularisation parameter. `nnet` has a parameter called decay for regularisation. In short, regularisation prevent over-fitting by penalising over-fitted training models.
 
-We will set hyperparameter ranges for size and decay for nnet optimisation.
+We will set hyperparameter ranges for size and decay for `nnet` optimisation.
 
 **Sampling**
 
@@ -152,6 +152,12 @@ confusionMatrix(train_pred, train$Popularity)
 confusionMatrix(test_pred, test$Popularity)
 ```
 
+- Output
+
+![nnet model](./img/nnet-model.webp)
+
+![evaluation](./img/eval1.webp)
+
 ### Comparing It With Default NN Model
 
 What if we used the model without any optimisation? Check out the outcome. It is pretty much as good as random picks. Now, you see the power of the simple caret optimisation!
@@ -166,6 +172,8 @@ test_pred_default <- predict(model_default, newdata=test, type="class")
 evaluate(train_pred_default, train)
 evaluate(test_pred_default, test)
 ```
+
+![evaluation 2](./img/eval2.webp)
 
 ### Should We Normalise the Dataset?
 
@@ -209,9 +217,13 @@ evaluate(test_pred_norm, test_norm)
 
 Testing accuracy is slightly worse. But, overall it is similar. I think it is still good to test on the normalised dataset when you are modelling with neural networks. Normalised data usually give us a different model. In this case, the final values used for the model were size = 1 and decay = 0.
 
+![evaluation 3](./img/eval3.webp)
+
 Let’s Benchmark!
 
 Here is the performance metric table from the paper (Fernandes et al. 2015). Our model has the same accuracy as AdaBoost and SVM. It preformed slightly worse then RF. We beat them in Precision (0.7). However, I don’t think our model is superior because we have quite low AUC compared to all the models in the paper. Overall, I am happy with what I got. You can really see what simple optimisation can make difference!
+
+![benchmark](./img/performance-benchmark.webp)
 
 ### Further Grid Search
 
@@ -240,6 +252,8 @@ evaluate(test_pred, test)
 The best hyperparameters turned out to be size = 4 and decay = 0.1. With these parameters, I didn’t see any improvement on test dataset prediction. I even observed the model was overfitting. Generally speaking, complex neural networks tend to overfit. This exercise somehow reminded me of Occam’s razor. By paraphrasing it, the simplest is the best given everything is the same. I think Occam’s razor is often sited in machine learning as the reminder that simpler is often better.
 
 Performance for size = 4 and decay = 0.1 is below:
+
+![evaluation 4](./img/eval4.webp)
 
 ### Your Turn
 
