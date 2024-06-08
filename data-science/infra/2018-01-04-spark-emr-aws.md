@@ -72,7 +72,7 @@ Launch a cluster with Spark, source codes & models from a repo and execute them.
 Copy data from S3 to Redshift (you can execute copy commands in the Spark code or Data Pipeline).
 Then, you can source the output into a BI tool for presentation.
 
-<!-- ![informatica]('./img/informatica.png') -->
+![informatica](img/informatica.png)
 
 Development Process Workflow
 
@@ -80,6 +80,6 @@ Finally, let’s have a look at development process workflow. Prior to Spark app
 
 Once the code and models are developed, we can close the EMR cluster and move onto the serverless execution in batch. Codes and models can be source from S3 in the Data Pipeline. It is a standard practice to version control them in a git type repository. Sourcing them from a repo in Data Pipeline makes more sense.
 
-<!-- ![Data Science workflow with EMR]('./img/ds-workflow-with-emr.png') -->
+![Data Science workflow with EMR](img/ds-workflow-with-emr.png)
 
 Let us know your experience with data science application deployment!
