@@ -6,12 +6,12 @@ tags: [Infrastructure]
 
 ## Table of Content
 
-- [AWS](docs/category/aws)
+- [AWS](../../docs/category/aws)
 
-- [DBA](docs/category/dba)
+- [DBA](../../docs/category/dba)
 
-- [Git](docs/category/git)
+- [Git](../../docs/category/git)
 
-- [Miscellaneous](docs/category/miscellaneous)
+- [Miscellaneous](../../docs/category/miscellaneous)
 
-- [Opinions](docs/category/opinions)
+- [Opinions](../../docs/category/opinions)

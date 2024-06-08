@@ -10,12 +10,12 @@ tags: [data engineering]
 
 ### ETL
 
-- [Informatica](docs/category/informatica)
+- [Informatica](../../docs/category/informatica)
 
-- [DataStage](docs/category/datastage)
+- [DataStage](../../docs/category/datastage)
 
-- [Talend](docs/category/talend)
+- [Talend](../../docs/category/talend)
 
 ### Data Ingestion
 
-- [Data Ingestion](docs/category/data-ingestion)
+- [Data Ingestion](../../docs/category/data-ingestion)

@@ -6,12 +6,12 @@ sidebar_position: 1
 
 ## List of Topics
 
-- [Data Ingestion](docs/category/data-ingestion)
+- [Data Ingestion](./category/data-ingestion)
 
-- [Infrastructure](docs/category/infrastructure)
+- [Infrastructure](./category/infrastructure)
 
-- [Web](docs/category/web)
+- [Web](./category/web)
 
-- [Git](docs/category/git)
+- [Git](./category/git)
 
-- [ChatGPT Generated](docs/category/chatgpt-generated)
+- [ChatGPT Generated](./category/chatgpt-generated)

@@ -4,7 +4,7 @@ sidebar_position: 20
 
 # Could not create controller Error for Controller Renderings – Sitecore 8.2
 
-ASP.NET standard controller action routing is {controller}/{action} (see here). When you create a new project, you will see this in RouteConfig.cs file in the App_Start folder.
+ASP.NET standard controller action routing is `{controller}/{action}` (see here). When you create a new project, you will see this in RouteConfig.cs file in the App_Start folder.
 
 Sitecore has overridden this standard route registration procedures. Routing to controller and action can be determined by the controller rendering component. This makes sense as Sitecore page typically has multiple controller renderings. When you create a visual studio solution, it is best to delete App_Start folder along with RouteConfig.cs so that you don’t override the Sitecore’s route registration.
 

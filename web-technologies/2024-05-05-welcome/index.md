@@ -6,12 +6,12 @@ tags: [web technologies]
 
 ## Table of Content
 
-- [.Net](docs/category/net)
+- [.Net](../../docs/category/net)
 
-- [Sitecore](docs/category/sitecore)
+- [Sitecore](../../docs/category/sitecore)
 
-- [Frontend](docs/category/frontend)
+- [Frontend](../../docs/category/frontend)
 
-- [Node.js](docs/category/nodejs)
+- [Node.js](../../docs/category/nodejs)
 
-- [Java](docs/category/java)
+- [Java](../../docs/category/java)
