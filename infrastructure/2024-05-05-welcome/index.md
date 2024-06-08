@@ -1,9 +1,17 @@
 ---
 slug: welcome
-title: Infrastructure
-tags: [infrastructure]
+title: Infrastructure Blog List
+tags: [Infrastructure]
 ---
 
-# Blogs related to Infrastructure
+## Table of Content
 
-In progress...
+- [AWS](docs/category/aws)
+
+- [DBA](docs/category/dba)
+
+- [Git](docs/category/git)
+
+- [Miscellaneous](docs/category/miscellaneous)
+
+- [Opinions](docs/category/opinions)

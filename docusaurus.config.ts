@@ -1,81 +1,82 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: 'MyDatahack',
-  tagline: 'Imperfection is the fingerprint of your soul...',
-  favicon: 'img/icon-circle.png',
+  title: "MyDatahack",
+  tagline: "Imperfection is the fingerprint of your soul...",
+  favicon: "img/icon-circle.png",
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: "https://your-docusaurus-site.example.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "facebook", // Usually your GitHub org/user name.
+  projectName: "docusaurus", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
   plugins: [
-    ['@docusaurus/plugin-content-blog',
-    {
-      id: 'web-technologies',
-      routeBasePath: 'web-technologies',
-      path: './web-technologies',
-      showReadingTime: true,
-    }],
-    ['@docusaurus/plugin-content-blog',
-    {
-      id: 'data-engineering',
-      routeBasePath: 'data-engineering',
-      path: './data-engineering',
-      showReadingTime: true,
-    }],
-    ['@docusaurus/plugin-content-blog',
-    {
-      id: 'data-science',
-      routeBasePath: 'data-science',
-      path: './data-science',
-      showReadingTime: true,
-      blogSidebarCount: 20,
-      blogSidebarTitle: 'Posts',
-    }],
-    ['@docusaurus/plugin-content-blog',
-    {
-      id: 'infrastructure',
-      routeBasePath: 'infrastructure',
-      path: './infrastructure',
-      showReadingTime: true,
-    }],
-    ['@docusaurus/plugin-content-blog',
-    {
-      id: 'others',
-      routeBasePath: 'others',
-      path: './others',
-      showReadingTime: true,
-    }],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "web-technologies",
+        routeBasePath: "web-technologies",
+        path: "./web-technologies",
+        showReadingTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "data-engineering",
+        routeBasePath: "data-engineering",
+        path: "./data-engineering",
+        showReadingTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "data-science",
+        routeBasePath: "data-science",
+        path: "./data-science",
+        showReadingTime: true,
+        blogSidebarCount: 20,
+        blogSidebarTitle: "Posts",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "infrastructure",
+        routeBasePath: "infrastructure",
+        path: "./infrastructure",
+        showReadingTime: true,
+      },
+    ],
   ],
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
           sidebarPath: "./sidebars.ts",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -83,43 +84,51 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: 'MyDatahack',
+      title: "MyDatahack",
       logo: {
-        alt: 'MyDatahack Logo',
-        src: 'img/icon-circle.png',
+        alt: "MyDatahack Logo",
+        src: "img/icon-circle.png",
       },
       items: [
-        {to: '/web-technologies', label: 'Web Technologies', position: 'left'},
-        {to: '/data-engineering', label: 'Data Engineering', position: 'left'},
-        {to: '/data-science', label: 'Data Science', position: 'left'},
-        {to: '/infrastructure', label: 'Infrastructure', position: 'left'},
-        {to: '/others', label: 'others', position: 'left'},
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Docs",
+          label: "Blogs",
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          to: "/web-technologies",
+          label: "Web Technologies",
+          position: "left",
+        },
+        {
+          to: "/data-engineering",
+          label: "Data Engineering",
+          position: "left",
+        },
+        { to: "/data-science", label: "Data Science", position: "left" },
+        { to: "/infrastructure", label: "Infrastructure", position: "left" },
+
+        {
+          href: "https://github.com/facebook/docusaurus",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: "Blog",
+              to: "/blog",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "GitHub",
+              href: "https://github.com/facebook/docusaurus",
             },
           ],
         },
