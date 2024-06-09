@@ -29,13 +29,13 @@ jobs:
           pwd
 
       - name: Copy to Remote Server
-        uses: pierrickdelrieu/scp-action@v0.1.0
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.DESTINATION_HOST }}
           ssh_port: ${{ secrets.DESTINATION_SSH_PORT }}
           ssh_username: ${{ secrets.SSH_USERNAME }}
-          ssh_key: ${{ secrets.SSH_KEY }}
-          ssh_passphrase: ${{ secrets.SSH_PASSPHRASE }}
-          source_dir: build
-          destination_dir: ${{ secrets.DESTINATION_FOLDER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          source: build
+          target: ${{ secrets.DESTINATION_FOLDER }}
           rm: true
