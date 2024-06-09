@@ -8,7 +8,7 @@ const config: Config = {
   favicon: "img/icon-circle.png",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://mydatahack.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -110,7 +110,7 @@ const config: Config = {
         { to: "/infrastructure", label: "Infrastructure", position: "left" },
 
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/takahirohonda",
           label: "GitHub",
           position: "right",
         },
@@ -128,7 +128,7 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/takahirohonda",
             },
           ],
         },
