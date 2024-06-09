@@ -32,8 +32,8 @@ jobs:
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.DESTINATION_HOST }}
-          ssh_port: ${{ secrets.DESTINATION_SSH_PORT }}
-          ssh_username: ${{ secrets.SSH_USERNAME }}
+          port: ${{ secrets.DESTINATION_SSH_PORT }}
+          username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           source: build
