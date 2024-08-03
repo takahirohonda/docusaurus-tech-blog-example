@@ -34,7 +34,7 @@ jobs:
           BRANCH: master # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
           REPOSITORY_NAME: takahirohonda/takahirohonda.github.io
-          TARGET_FOLDER: taka-blog
+          TARGET_FOLDER: mdh-blog
           CLEAN: true # Automatically remove deleted files from the deploy branch
       # - name: Add KEX algorithms to ssh_config
       #   run: |
