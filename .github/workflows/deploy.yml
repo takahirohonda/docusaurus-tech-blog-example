@@ -1,5 +1,5 @@
 # https://github.com/marketplace/actions/transfer-files-in-repository-to-remote-server-via-scp
-name: Deploy to Remote Server
+name: Deploy
 on:
   push:
     branches:
@@ -27,27 +27,36 @@ jobs:
         run: |
           yarn build
           pwd
-      - name: Add KEX algorithms to ssh_config
-        run: |
-          echo 'KexAlgorithms +diffie-hellman-group-exchange-sha256' | sudo tee -a /etc/ssh/ssh_config
-          sudo systemctl restart sshd
+      - name: Deploy to Github page
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          ACCESS_TOKEN: ${{ secrets.GIT_PAGE_DEPLOY  }}
+          BRANCH: master # The branch the action should deploy to.
+          FOLDER: build # The folder the action should deploy.
+          REPOSITORY_NAME: takahirohonda/takahirohonda.github.io
+          TARGET_FOLDER: taka-blog
+          CLEAN: true # Automatically remove deleted files from the deploy branch
+      # - name: Add KEX algorithms to ssh_config
+      #   run: |
+      #     echo 'KexAlgorithms +diffie-hellman-group-exchange-sha256' | sudo tee -a /etc/ssh/ssh_config
+      #     sudo systemctl restart sshd
 
-      - name: Copy to remote
-        env:
-          DESTINATION_HOST: ${{ secrets.DESTINATION_HOST }}
-          PORT: ${{ secrets.DESTINATION_SSH_PORT }}
-          USERNAME: ${{ secrets.SSH_USERNAME }}
-          KEY: ${{ secrets.SSH_KEY }}
-          PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
-          TARGET: ${{ secrets.DESTINATION_FOLDER }}
-        run: |
-          echo setting up the private key file
-          touch id_rsa_mdh_bluehost
-          echo "$KEY" > id_rsa_mdh_bluehost
-          chmod 600 id_rsa_mdh_bluehost
-          echo Running scp command...        
-          scp -i ~/.ssh/id_rsa_mdh_bluehost -P "$PORT" -r ~/code/mdh/docusaurus-tech-blog-example/build/* "USERNAME"@"DESTINATION_HOST"/home3/"USERNAME"/public_html
-          echo scp command done 🎉!
+      # - name: Copy to remote
+      #   env:
+      #     DESTINATION_HOST: ${{ secrets.DESTINATION_HOST }}
+      #     PORT: ${{ secrets.DESTINATION_SSH_PORT }}
+      #     USERNAME: ${{ secrets.SSH_USERNAME }}
+      #     KEY: ${{ secrets.SSH_KEY }}
+      #     PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
+      #     TARGET: ${{ secrets.DESTINATION_FOLDER }}
+      #   run: |
+      #     echo setting up the private key file
+      #     touch id_rsa_mdh_bluehost
+      #     echo "$KEY" > id_rsa_mdh_bluehost
+      #     chmod 600 id_rsa_mdh_bluehost
+      #     echo Running scp command...
+      #     scp -i ~/.ssh/id_rsa_mdh_bluehost -P "$PORT" -r ~/code/mdh/docusaurus-tech-blog-example/build/* "USERNAME"@"DESTINATION_HOST"/home3/"USERNAME"/public_html
+      #     echo scp command done 🎉!
       # - name: Copy to Remote Server
       #   uses: appleboy/scp-action@v0.1.7
       #   with:

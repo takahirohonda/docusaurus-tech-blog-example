@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --ifm-color-primary: #dd3333;
   --ifm-color-primary-dark: #c43030;
@@ -9,7 +13,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #e57373; /* Lighter shade of red for better readability */
   --ifm-color-primary-dark: #c43030;
   --ifm-color-primary-darker: #b82c2c;
