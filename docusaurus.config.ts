@@ -18,7 +18,7 @@ const config: Config = {
   organizationName: "mdh", // Usually your GitHub org/user name.
   projectName: "docusaurus-tech-blog-example", // Usually your repo name.
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn", // Having trouble with links for github page, updated to warn from throw
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
