@@ -8,7 +8,7 @@ const config: Config = {
   favicon: "img/icon-circle.png",
 
   // Set the production url of your site here
-  url: "https://https://takahirohonda.github.io",
+  url: "https://takahirohonda.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/mydatahack-old-blog",
