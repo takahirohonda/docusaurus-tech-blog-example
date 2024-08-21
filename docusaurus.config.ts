@@ -74,6 +74,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
+          // for gitpage
+          routeBasePath: "/mydatahack-old-blog",
         },
         theme: {
           customCss: "./src/css/custom.css",

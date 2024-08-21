@@ -6,12 +6,12 @@ tags: [web technologies]
 
 ## Table of Content
 
-- [.Net](../../docs/category/net)
+- [.Net](../../mydatahack-old-blog/docs/category/net)
 
-- [Sitecore](../../docs/category/sitecore)
+- [Sitecore](../../mydatahack-old-blog/docs/category/sitecore)
 
-- [Frontend](../../docs/category/frontend)
+- [Frontend](../../mydatahack-old-blog/docs/category/frontend)
 
-- [Node.js](../../docs/category/nodejs)
+- [Node.js](../../mydatahack-old-blog/docs/category/nodejs)
 
-- [Java](../../docs/category/java)
+- [Java](../../mydatahack-old-blog/docs/category/java)

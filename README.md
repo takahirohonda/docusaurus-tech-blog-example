@@ -11,3 +11,5 @@ Instead of using the preset, we can add plugin configs for `@docusaurus/plugin-c
 2. Multiple doc pages
 
 ## Reference
+
+Using `@docusaurus/plugin-content-docs` to fix the build error from wrong relative path after adding the base URL for GitPage.

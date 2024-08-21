@@ -10,12 +10,12 @@ tags: [data engineering]
 
 ### ETL
 
-- [Informatica](../../docs/category/informatica)
+- [Informatica](../../mydatahack-old-blog/docs/category/informatica)
 
-- [DataStage](../../docs/category/datastage)
+- [DataStage](../../mydatahack-old-blog/docs/category/datastage)
 
-- [Talend](../../docs/category/talend)
+- [Talend](../../mydatahack-old-blog/docs/category/talend)
 
 ### Data Ingestion
 
-- [Data Ingestion](../../docs/category/data-ingestion)
+- [Data Ingestion](../..//mydatahack-old-blog/docs/category/data-ingestion)

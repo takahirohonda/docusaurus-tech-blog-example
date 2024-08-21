@@ -6,12 +6,12 @@ tags: [Infrastructure]
 
 ## Table of Content
 
-- [AWS](../../docs/category/aws)
+- [AWS](../../mydatahack-old-blog/docs/category/aws)
 
-- [DBA](../../docs/category/dba)
+- [DBA](../../mydatahack-old-blog/docs/category/dba)
 
-- [Git](../../docs/category/git)
+- [Git](../../mydatahack-old-blog/docs/category/git)
 
-- [Miscellaneous](../../docs/category/miscellaneous)
+- [Miscellaneous](../../mydatahack-old-blog/docs/category/miscellaneous)
 
-- [Opinions](../../docs/category/opinions)
+- [Opinions](../../mydatahack-old-blog/docs/category/opinions)
